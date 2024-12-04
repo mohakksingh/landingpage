@@ -1,4 +1,3 @@
-import React from "react";
 import { SparklesCore } from "./ui/sparkles";
 
 const Hero = () => {
