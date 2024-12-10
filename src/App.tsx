@@ -7,6 +7,7 @@ import Reviews from "./components/reviews";
 import Pricing from "./components/pricing";
 import Footer from "./components/footer";
 import { Spotlight } from "./components/ui/spotlight";
+import Subscribe from "./components/subscribe";
 function App() {
   return (
     <>
@@ -25,15 +26,21 @@ function App() {
               </h2>
               <Reviews />
             </div>
-            <Spotlight className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"/>
-            <div>
+            <Spotlight
+              className="-top-40 left-0 md:left-60 md:-top-20"
+              fill="white"
+            />
+            <div className="flex justify-center flex-col">
               <h2 className="text-center font-bold text-4xl my-10">Pricing</h2>
               <Pricing />
+            </div>
+            <div className="flex justify-center ">
+              <Subscribe/>
             </div>
             <div>
               <Footer />
             </div>
+            
           </main>
         </div>
       </ThemeProvider>
