@@ -2,7 +2,6 @@ import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { CardTitle } from "./ui/card-hover-effect";
 import { Button } from "./ui/button";
 import { Spotlight } from "./ui/spotlight";
-import checkmark from "../assets/checkmark.svg"
 
 const Pricing = () => {
   return (
