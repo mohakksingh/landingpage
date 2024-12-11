@@ -8,12 +8,15 @@ import Pricing from "./components/pricing";
 import Footer from "./components/footer";
 import { Spotlight } from "./components/ui/spotlight";
 import Subscribe from "./components/subscribe";
+import { motion } from "motion/react";
 function App() {
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <div>
-          <Header />
+          <motion.div className="flex justify-center z-10">
+            <Header />
+          </motion.div>
           <main className="">
             <Hero />
             <div className="flex justfify-center flex-col">
@@ -35,12 +38,11 @@ function App() {
               <Pricing />
             </div>
             <div className="flex justify-center ">
-              <Subscribe/>
+              <Subscribe />
             </div>
             <div>
               <Footer />
             </div>
-            
           </main>
         </div>
       </ThemeProvider>

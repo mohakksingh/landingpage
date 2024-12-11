@@ -64,7 +64,7 @@ const Pricing = () => {
                 <span className="">/month</span>
               </p>
               <p className="font-light text-md text-neutral-500">{plan.tag}</p>
-              <Button className="my-5 w-full bg-[#2a2a2d] text-white border border-white hover:bg-red-600">
+              <Button className="my-5 w-full bg-[#2a2a2d] text-white border border-white hover:bg-white hover:text-black">
                 {plan.button}
               </Button>
               <div className="bg-zinc-950 p-8 rounded-lg">
@@ -80,15 +80,17 @@ const Pricing = () => {
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex gap-4">
                     <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="h-5 w-5 text-blue-500"
-                      >
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path d="M9 16.2l-3.5-3.5 1.4-1.4 2.1 2.1 5.6-5.6 1.4 1.4L9 16.2z" />
-                      </svg>
+                      <div className="border rounded-xl ">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="h-5 w-5 text-blue-500"
+                        >
+                          <path d="M0 0h24v24H0z" fill="none" />
+                          <path d="M9 16.2l-3.5-3.5 1.4-1.4 2.1 2.1 5.6-5.6 1.4 1.4L9 16.2z" />
+                        </svg>
+                      </div>
                     </div>
                     {feature}
                   </li>
