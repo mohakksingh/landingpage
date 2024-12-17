@@ -1,5 +1,4 @@
 import { Globe } from "lucide-react";
-import { MovingBorder } from "./ui/moving-border";
 
 const Header = () => {
   return (
