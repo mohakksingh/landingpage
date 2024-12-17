@@ -1,5 +1,5 @@
-import { ModeToggle } from "./mode-toggle";
 import { Globe } from "lucide-react";
+import { MovingBorder } from "./ui/moving-border";
 
 const Header = () => {
   return (
@@ -10,34 +10,32 @@ const Header = () => {
           <a className="font-bold" href="/">
             Quanta Inc.
           </a>
-          {/* <TextHoverEffect text="ACET" /> */}
         </div>
         <div className="ml-auto gap-4 flex ">
           <a
-            className="font-bold mt-1 bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans"
-            href=""
+            className="font-bold bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans hover:text-white"
+            href="#pricing"
           >
             Home
           </a>
           <a
-            className="font-bold mt-1  bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans"
+            className="font-bold   bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans hover:text-white"
             href=""
           >
             About
           </a>
           <a
-            className="font-bold mt-1  bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans"
+            className="font-bold  bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans hover:text-white"
             href=""
           >
             Contact
           </a>
           <a
-            className="font-bold mt-1  bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans "
+            className="font-bold bg-clip-text text-transparent bg-gradient-to-t from-neutral-100 to-neutral-400 dark:from-black dark:to-neutral-100 font-sans hover:text-white pr-3"
             href=""
           >
             Pricing
           </a>
-          <ModeToggle />
         </div>
       </header>
     </div>

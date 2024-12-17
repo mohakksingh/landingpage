@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import { Spotlight } from "./components/ui/spotlight";
 import Subscribe from "./components/subscribe";
 import { motion } from "motion/react";
+import { ContainerScroll } from "./components/ui/container-scroll-animation";
 function App() {
   return (
     <>
@@ -19,9 +20,21 @@ function App() {
           </motion.div>
           <main className="">
             <Hero />
-            <div className="flex justfify-center flex-col">
-              <h2 className="text-center font-bold text-4xl">Our Features</h2>
-              <Features />
+            <div className="flex justfify-center flex-col overflow-hidden">
+              <ContainerScroll
+                titleComponent={
+                  <>
+                    <h1 className="text-4xl font-semibold text-black dark:text-white">
+                      With Our Features <br />
+                      <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                        Unlock Your Full Potential
+                      </span>
+                    </h1>
+                  </>
+                }
+              >
+                <Features />
+              </ContainerScroll>
             </div>
             <div className="flex justfify-center flex-col">
               <h2 className="text-center font-bold text-4xl mt-10">
@@ -33,12 +46,15 @@ function App() {
               className="-top-40 left-0 md:left-60 md:-top-20"
               fill="white"
             />
+
             <div className="flex justify-center flex-col">
               <h2 className="text-center font-bold text-4xl my-10">Pricing</h2>
               <Pricing />
             </div>
             <div className="flex justify-center ">
-              <Subscribe />
+              <div className="flex">
+                <Subscribe />
+              </div>
             </div>
             <div>
               <Footer />
